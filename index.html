@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Gæt et tal</title>
+  </head>
+  <body>
+    <h1>Gæt et tal</h1>
+    <h2>Jeg tænker på et tal mellem 1 og 100. Kan du gætte det?</h2>
+    <h3>Indtast dit gæt i feltet her:</h3>
+    <input
+      type="number"
+      id="guess"
+      min="0"
+      max="100"
+      class="guess-input"
+      oninput="validateInput(this)"
+    />
+    <h4>Du kan klikke eller bruge Enter-tasten</h4>
+    <button class="guess-button">Gæt</button>
+    <p class="guess-info"></p>
+    <button class="restart-button">Spil igen?</button>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>

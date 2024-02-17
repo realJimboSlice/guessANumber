@@ -1,0 +1,135 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 20px;
+}
+
+@keyframes rainbowText {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: lime;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: indigo;
+  }
+  60% {
+    color: violet;
+  }
+  70% {
+    color: purple;
+  }
+  80% {
+    color: cyan;
+  }
+  90% {
+    color: pink;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes rainbowBG {
+  0% {
+    background: red;
+  }
+  20% {
+    background: yellow;
+  }
+  40% {
+    background: blue;
+  }
+  60% {
+    background: violet;
+  }
+  80% {
+    background: cyan;
+  }
+  100% {
+    background: red;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    color: white;
+  }
+  50% {
+    opacity: 0;
+    color: black;
+  }
+  100% {
+    opacity: 1;
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 100px;
+  animation: rainbowText 5s linear infinite;
+}
+
+h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.guess-input {
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.guess-button {
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.restart-button {
+  display: none;
+  color: black;
+  padding: 20px 40px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.guess-info {
+  margin: 20px 0;
+  font-size: 20px;
+}
